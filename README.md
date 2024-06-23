@@ -1,4 +1,6 @@
-# 
+# Docker image with pg_search extension
+
+In this repository I have successfully tried to install the PostgreSQL extension [pg_search](https://github.com/paradedb/paradedb/tree/dev/pg_search#overview) in the `postgres:16` Docker image.
 
 ```sh
 $ docker compose build
