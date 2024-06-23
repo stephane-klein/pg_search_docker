@@ -1,0 +1,14 @@
+services:
+  pg_search:
+    build:
+      context: .
+    image: stephaneklein/pg_search:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_HOST: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - ./volumes/postgres/:/var/lib/postgresql/data/
